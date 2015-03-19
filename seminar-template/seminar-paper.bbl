@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{BLE05}
+Z.~Alliance.
+\newblock {Market Leadership}.
+\newblock Technical report, ZigBee Alliance, Available on February 2014.
+\newblock
+  \url{http://old.zigbee.org/About/AboutTechnology/MarketLeadership.aspx}.
+
+\bibitem{BLE04}
+Bluetooth.org.
+\newblock {History of the Bluetooth Special Interest Group}.
+\newblock Technical report, Bluetooth Special Interest Group, Available on
+  February 2015.
+\newblock \url{http://www.bluetooth.com/Pages/History-of-Bluetooth.aspx}.
+
+\bibitem{BLE03}
+Bluetooth.org.
+\newblock {The Low Energy Technology Behind Bluetooth Smart}.
+\newblock Technical report, Bluetooth Special Interest Group, Available on
+  February 2015.
+\newblock \url{http://www.bluetooth.com/Pages/low-energy-tech-info.aspx}.
+
+\bibitem{BLEDH}
+R.~Heydon.
+\newblock {\em {Bluetooth Low Energy: the developer's handbook}}.
+\newblock 2013.
+
+\bibitem{BLE02}
+S.~A. Joe~Decuir.
+\newblock {Bluetooth 4.0: Low Energy}.
+\newblock Technical report, CSR plc, Available on February 2015.
+\newblock \url{http://chapters.comsoc.org/vancouver/BTLER3.pdf}.
+
+\bibitem{BLE01}
+A.~West.
+\newblock {Smartphone, the key for Bluetooth low energy technology}.
+\newblock Technical report, IMS Research, Available on February 2015.
+\newblock \url{http://www.bluetooth.com/Pages/Smartphones.aspx}.
+
+\bibitem{BLEWiki}
+Wikipedia.
+\newblock {Bluetooth}.
+\newblock Technical report, avaiable on Feb. 16th, 2015.
+\newblock \url{http://en.wikipedia.org/wiki/Bluetooth}.
+
+\end{thebibliography}
