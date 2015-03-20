@@ -7,6 +7,22 @@ Z.~Alliance.
 \newblock
   \url{http://old.zigbee.org/About/AboutTechnology/MarketLeadership.aspx}.
 
+\bibitem{BLE_2014}
+Bluetooth.org.
+\newblock {Updated Bluetooth 4.1 Extends the Foundation of Bluetooth Technology
+  for the Internet of Things}.
+\newblock Technical report, Bluetooth Special Interest Group, 2013.
+\newblock
+  \url{http://www.bluetooth.com/Pages/Press-Releases-Detail.aspx?ItemID=197}.
+
+\bibitem{BLE_4.2}
+Bluetooth.org.
+\newblock {New Bluetooth Specifications Enable IP Connectivity and Deliver
+  Industry-leading Privacy and Increased Speed}.
+\newblock Technical report, Bluetooth Special Interest Group, 2014.
+\newblock
+  \url{http://www.bluetooth.com/Pages/Press-Releases-Detail.aspx?ItemID=220}.
+
 \bibitem{BLE04}
 Bluetooth.org.
 \newblock {History of the Bluetooth Special Interest Group}.

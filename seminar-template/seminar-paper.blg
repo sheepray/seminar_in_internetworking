@@ -5,45 +5,45 @@ The style file: abbrv.bst
 Database file #1: seminar-paper.bib
 Warning--empty publisher in BLEDH
 Warning--empty institution in BLEWiki
-You've used 7 entries,
+You've used 9 entries,
             2118 wiz_defined-function locations,
-            542 strings with 4630 characters,
-and the built_in function-call counts, 1477 in all, are:
-= -- 155
-> -- 49
+            550 strings with 5015 characters,
+and the built_in function-call counts, 1887 in all, are:
+= -- 201
+> -- 63
 < -- 0
-+ -- 21
-- -- 14
-* -- 66
-:= -- 297
-add.period$ -- 27
-call.type$ -- 7
-change.case$ -- 33
++ -- 27
+- -- 18
+* -- 80
+:= -- 381
+add.period$ -- 35
+call.type$ -- 9
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 60
-empty$ -- 113
-format.name$ -- 14
-if$ -- 291
+cite$ -- 11
+duplicate$ -- 76
+empty$ -- 143
+format.name$ -- 18
+if$ -- 373
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 9
 missing$ -- 2
-newline$ -- 44
-num.names$ -- 14
-pop$ -- 22
+newline$ -- 56
+num.names$ -- 18
+pop$ -- 26
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 27
 quote$ -- 0
-skip$ -- 36
+skip$ -- 46
 stack$ -- 0
-substring$ -- 35
+substring$ -- 45
 swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 26
+type$ -- 34
 warning$ -- 2
-while$ -- 14
-width$ -- 8
-write$ -- 88
+while$ -- 18
+width$ -- 10
+write$ -- 114
 (There were 2 warnings)

@@ -10,7 +10,7 @@
 
 %=========================================================
 
-\title{Bluetooth Smart}
+\title{Something You Need To Know About Bluetooth Smart}
 
 \author{Rui Yang\\
         Student number: 467656\\
@@ -71,21 +71,39 @@ This article is organized as follows. Section 3 introduces the evolution of BLE 
 %============================================================
 \section{Evolutions of BLE Essential Features}
 \subsection{Introduction to BLE}
-Bluetooth Smart is described as an revolutionary technology introduced in 2010. Great conveniences have been brought to its manufacturers, developers and consumers since it emerged. According to the definition from the SIG, Bluetooth Smart is an brand name for Bluetooth version 4.0 featuring low energy consumption for the first time. So, the Bluetooth Smart is also called BLE. Compared to previous versions of Bluetooth, BLE is newly designed and has a distinct feature of low energy consumption. With the flourish of Internet of Thing (IoT) and mobile devices, it has been estimated that more 2 billion units of BLE will be deployed around the globe\cite{BLE01}. 
+Bluetooth Smart is described as an revolutionary technology introduced in 2010. Great conveniences have been brought to its manufacturers, developers and consumers since it emerged. According to the definition from the SIG, Bluetooth Smart is an brand name for Bluetooth version 4.0 featuring low energy consumption for the first time. So, the Bluetooth Smart is also called BLE. Compared to previous versions of Bluetooth, BLE is newly designed and has a distinct feature of low energy consumption. With the flourish of Internet of Thing (IoT) and mobile devices, it has been estimated that more 2 billion units of BLE will be deployed around the globe in 2011\cite{BLE01}. 
 
 Normally, the design goal determines a product in respect of functionalities and performances. The goal of the classic Bluetooth is to stand by for several days or data streaming for several hours., while the BLE is designed to stand by for several years collecting or broadcasting data such as temperature and location information. In the earlier design of BLE, it is aimed to be equipped with several key features, including low cost, supporting worldwide operation, low power consumption and robustness, etc. All of these design goals determine how each sub-systems in BLE should be implemented. In order to achieve the lowest cost, the system shall be kept as small and efficient as possible and new methodologies should be adapt to boost the performance. For instance, to provide supports for new network topologies, BLE has been optimized to low the cost using research based methodology\cite{BLEDH}. In addition, BLE uses the 2.45GHz ISM band to transfer signals to support worldwide operations. However, this radio band is unlicensed and every organization can use it for commercial purpose. As a result, it is crowded with many transmission signals such as  Bluetooth and Wi-Fi. In order to co-exist in such a radio band, a mechanism called Adaptive Frequency Hopping has been introduced to help Bluetooth avoid signal conflicts. Last but not least, the low energy consumption feature has had a great impact on the design of the protocol stack of BLE. For example, the link layer has been considered as the most complicated layer in the Bluetooth protocol stacks. While in BLE, the link layer has been lightened and even provides super low energy consumption.
 
 For a successful technology like Bluetooth, even with the revolutionary update, all the traditional features of classical Bluetooth should be included in the BLE as well. So in order to inherit all the features from previous version of Bluetooth at the same time, the BLE is designed to run in two modes: single-mode and dual-mode. In single-mode implementation, only the low energy protocol stack is implemented. In dual-mode implementation, the functionalities of BLE is integrated in classic Bluetooth controller\cite{BLEWiki}. Furthermore, one thing needed to be mentioned is its change of transmission speed. Because of the top concerns of low energy consumption, BLE commonly adopts the Basic Rate (BR) with transmission rate about 0.3 Mbps while optional with Enhanced Data Rate (EDR)(see in table \ref{Bluetooth_Speed}).
 
-In sum, low energy, as the revolutionary feature of BLE, influenced BLE from its design to implementation. As its expanded feature, new applications shall be rising and benefits will be brought to its manufactures, developers and consumers after its ultra-high deployment\cite{BLE01}.
+In sum, low energy, as the revolutionary feature of BLE, influenced BLE from its design to implementation. As its expanded feature, new applications shall be rising and benefits will be brought to its manufactures, developers and consumers after its ultra-high number of deployment \cite{BLE01}.
 
 %--------------------------------------------------------------------------------------------------------
 \subsection{Evolutions introduced in Bluetooth 4.1}
-As an revolutionary update to the Bluetooth 4.0, although no hardware has been updated, it 
+After the emergence of the Bluetooth Low Energy, the shipment of BLE has been on a rocket growth with 4.5 billion shipments estimated within next 5 years beginning in 2014\cite{BLE_2014}. The SIG continues to sculpt the Bluetooth 4.0 to satisfy the needs of the commercial market. So the Bluetooth 4.1, as a critical update, has been renewed its specification and assigned more flexibility for its developers to integrate more functionalities. What's more, a better co-existence with TLE radios, high transmission rate and high consistence of connections have also been included in Bluetooth 4.1. More specific details are described as follows.
 
+As a revolutionary update to its previous version, as known as the Bluetooth 4.0, although no hardware component has been updated, Bluetooth 4.1 do provide some exciting features.
+\subsubsection{Improving Usability}
+To improve the consumers' usabilities which have been slightly mentioned above. The SIG defines outcomes of this specific improvements in consumer usabilities as "just work" for a simple experience. And this "just work" experience comes from the following three aspects.
+
+First of all, Bluetooth 4.1 provides a better co-existence with TLE radios. As we all know that the LTE has been widely adopted as 4G standard for cellular networks and the global shipment of mobile phone supporting LTE also grows swiftly. In order to reduce the interference between this two promising technologies, the update in Bluetooth 4.1 allows the bluetooth device to communicate with LTE radios to minimize the interference by cooperating with each other. This is automatically done by the Bluetooth device without any operation from the user perspective.
+
+In addition, Bluetooth 4.1 also support the seamless and silent connection between two Bluetooth devices which have been connected with each other before. This can help to improve the usability since the whole process is done automatically without any user's participation.
+
+The third one to improve the usability is supporting bulk data transfer. The scenario is that, when large amount of data needed to be transmitted, for instance from a sensor to a roaming device, it have been implemented in Bluetooth 4.1 that techniques featuring data compression, data blocking and buffering to optimize the transfer rate. So, the transmission between two Bluetooth devices could be more efficient.
+
+\subsubsection{Enabling Developer Innovation}
+Bluetooth 4.1 enables the developer innovation in the form of allowing the developer to set the role of each Bluetooth device as a Bluetooth Smart Ready Hub and Bluetooth Smart Peripherals at the same time. As a Bluetooth Smart Ready Hub, a Bluetooth device can collect data from other Bluetooth devices. While as a Bluetooth Smart Peripheral, it can transmit the data to another Bluetooth device. By setting both roles at the same time for Bluetooth device, more use cases and applications can be built upon this innovation feature.
+
+\subsubsection{Enabling IoT}
+Bluetooth is a promising technology to provide wireless connectivity in the emerging world of IoT. With enabling IPv6 in Bluetooth 4.1, the device is considered as an IoT device after it connects to the public network using Bluetooth.
+%the reason behind this update
 %--------------------------------------------------------------------------------------------------------
 \subsection{Evolutions introduced in Bluetooth 4.2}
+Published on December 3rd in 2014, Bluetooth 4.2 continues to achieve its initial purpose which is connecting all technologies. This update is a great step forward which should be marked a milestone in the history of evolutions of Bluetooth. It is a hardware update which means to get the full functionalities of Bluetooth 4.2, one has to get a new hardware. But part of the features, including the privacy preserving, can be updated or acquired via a firmware update to the Bluetooth 4.0 and 4.1. Main updates of Bluetooth 4.2 include enhanced privacy and security, boosted transmission speed and full internet connectivity \cite{BLE_4.2}.
 
+From the aspect of enabling IoT, Bluetooth 4.1 is a step into IoT while Bluetooth 4.2 is another step forward, coming to the real implementation, Bluetooth 4.2 is the one that fully enable the connectivity of IPv6.
 %============================================================
 \section{User Case Demonstration}
 
