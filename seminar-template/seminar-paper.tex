@@ -103,7 +103,11 @@ Bluetooth is a promising technology to provide wireless connectivity in the emer
 \subsection{Evolutions introduced in Bluetooth 4.2}
 Published on December 3rd in 2014, Bluetooth 4.2 continues to achieve its initial purpose which is connecting all technologies. This update is a great step forward which should be marked a milestone in the history of evolutions of Bluetooth. It is a hardware update which means to get the full functionalities of Bluetooth 4.2, one has to get a new hardware. But part of the features, including the privacy preserving, can be updated or acquired via a firmware update to the Bluetooth 4.0 and 4.1. Main updates of Bluetooth 4.2 include enhanced privacy and security, boosted transmission speed and full internet connectivity \cite{BLE_4.2}.
 
-From the aspect of enabling IoT, Bluetooth 4.1 is a step into IoT while Bluetooth 4.2 is another step forward, coming to the real implementation, Bluetooth 4.2 is the one that fully enable the connectivity of IPv6.
+The goals of Bluetooth Security Manager are to provide security connections and secure the communications. As which, Bluetooth 4.2 has introduced a new security model named LE security connections \cite{BLE_SM}.  This new security model adopted an algorithm called Elliptic Curve Diffie-Man(ECDN) for public/private key generation. And a new key paring procedure has also been adopted in Bluetooth 4.1. It is claimed by the ISG that using the LE Secure Connections can protect the communication from the passive eavesdropping and Man In the Middle (MITM) attacks regardless of the paring methods \cite{BLE_SM}. More security features of Bluetooth are discussed in section 5.
+
+Another exciting feature in Bluetooth 4.1 is its enhanced transmission rate with boosting more than 2.5 times of transmission speed and even lower transmission error \cite{BLE_4.2}. And this enhanced transmission is partially achieved by increasing the payload of transmission packet. With the increase of transmission speed, the number of packets needed to be transferred has been decreased thus less transmission errors could occur and less energy would be consumed.
+
+In addition to the features mentioned above, from the aspect of enabling internet connectivities for IoT, if we consider Bluetooth 4.1 is a step into IoT which no longer needs an intermedia support to function as a gateway, such as a smartphone, Bluetooth 4.2 is another step forward with more new features released. Once getting the approve from the Internet Protocol Support Profile (IPSP) that Bluetooth can be allowed to directly connect to the network using IPv6/6LoWPAN, the Bluetooth can utilize the current IP structure to communicate with each other or control other devices.
 %============================================================
 \section{User Case Demonstration}
 
@@ -118,7 +122,7 @@ From the aspect of enabling IoT, Bluetooth 4.1 is a step into IoT while Bluetoot
 \subsection{Possible Security Issues and Solutions}
 %============================================================
 \section{Conclusion}
-
+although has been announced still need the support from OEMs to bring this benefits to the public.
 
 %============================================================
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{BLE05}
 Z.~Alliance.
@@ -36,6 +36,14 @@ Bluetooth.org.
 \newblock Technical report, Bluetooth Special Interest Group, Available on
   February 2015.
 \newblock \url{http://www.bluetooth.com/Pages/low-energy-tech-info.aspx}.
+
+\bibitem{BLE_SM}
+V.~Gao.
+\newblock {Everything that you always want to know about Bluetooth security in
+  Bluetooth 4.1}.
+\newblock Technical report, Bluetooth Special Interest Group, 2014.
+\newblock
+  \url{http://blog.bluetooth.com/everything-you-always-wanted-to-know-about-bluetooth-security-in-bluetooth-4-2/}.
 
 \bibitem{BLEDH}
 R.~Heydon.
