@@ -110,8 +110,22 @@ Another exciting feature in Bluetooth 4.1 is its enhanced transmission rate with
 In addition to the features mentioned above, from the aspect of enabling internet connectivities for IoT, if we consider Bluetooth 4.1 is a step into IoT which no longer needs an intermedia support to function as a gateway, such as a smartphone, Bluetooth 4.2 is another step forward with more new features released. Once getting the approve from the Internet Protocol Support Profile (IPSP) that Bluetooth can be allowed to directly connect to the network using IPv6/6LoWPAN, the Bluetooth can utilize the current IP structure to communicate with each other or control other devices.
 %============================================================
 \section{User Case Demonstration}
+With the emergency of the Bluetooth, large numbers of applications based on it have been introduced to this world. This section describes one particular use case of Bluetooth in Smart Hotel. It particularly present how  the Bluetooth cooperate with other technologies and how the application is fully compatible with both the old and new version of Bluetooth.
 
+\begin{figure}
+\centering
+\includegraphics[width=3.5in]{figures/use_case.png}
+\caption{Components in Hotel Use Cases}
+\label{use case}
+\end{figure}
 
+Figure \ref{use case} shows all the components in the hotel use cases.
+\\1. Mobile Devices: equipped with either classic Bluetooth or BLE;
+\\2. Central Gateway Module: hardware which can connects to the Internet and communicate with classic Bluetooth or the BLE devices;
+\\3. Lock modules: Physical locks embedded with BLE which control the openness of the door and communicate with the central gateway module;
+\\4. Could: backend server for authentication.
+
+The tenant holds the mobile devices. When they want to open their door, the mobile device connects to the central gateway module through classic Bluetooth or BLE along with its credentials. If the mobile device is using the BLE, the central gateway module also uses the BLE to communicate with the mobile device. If the mobile device is not compatible with BLE, a classic Bluetooth connection will be created between them. Once the central gateway module received the credential from the mobile device, it forward the credential to the backend server to verify the identity of the mobile device.
 %============================================================
 \section{Security Features}
 
