@@ -157,7 +157,7 @@ The second phase is to make sure that the key exchange in phase three is operate
 
 After STK is been obtained, up to three 128-bit keys can be encrypted using STK and distributed to another device. These three keys contains  Long-Term Key (LTK), the Connection Signature Resolving Key (CSRK) and the Identity Resolving Key (IRK). LTK is used to create session key for each Link Layer connection (See BLE protocol structure in Fig. \ref{BLE_protocol_stack}). CSRK is to sign the data at the ATT Layer and IRK is to generate the private address using the known public address thus to avoid the tracking.
 
-So, basically this is the whole three phase that the BLE 4.0 and 4.1 build trust between each other. One possible threat about this mechanism is introduced in the following section as well as the solution adopted in BLE 4.2.
+So, basically this is the whole three phases that the BLE 4.0 and 4.1 build trust between each other. One possible threat about this mechanism is introduced in the following section as well as the solution adopted in BLE 4.2.
 \begin{figure}
 \centering
 \includegraphics[width=2.5in]{figures/BLE_protocol_stack.jpg}
@@ -167,9 +167,12 @@ So, basically this is the whole three phase that the BLE 4.0 and 4.1 build trust
 
 %--------------------------------------------------------------------------------------------------------
 \subsection{Possible Security Issues and Solutions}
+This section mainly describes part of potential threats to the BLE devices. Just mentioned in previous section, the BLE 4.0 and 4.1 is vulnerable to MITM attack. The most common one is the active eavesdropping in which the hacker acts as the intermedia between two BLE victim devices while the victims believes that they are directly connected to each other. So the hacker can fetch all the data that have been transmitted between these two. This attack also common in the HTTPS web applications. To prevent the active eavesdropping from happening, two methods, namely Passkey Entry and Out of Band method, can be used to achieve this purpose.
+
+Another critical MINTM attack is passive eavesdropping which means the hacker silently listen to the connection without even notice from the victims. This can happen when the keys (in 3 phase mentioned above) is exchanged through an insecure channel and the hacker intercepts these keys to decrypt the messages it receive from the victims. In order to overcome this issue, Elliptic curve Diffie?Hellman (ECDH) has been introduced into LE Secure Connection.
 %============================================================
 \section{Conclusion}
-although has been announced still need the support from OEMs to bring this benefits to the public.
+This article mainly introduce the essential feature of Bluetooth 4.0 to 4.2. One specific use case in hotel has been discussed and the roles of Bluetooth played in such a use case have been demonstrated. After that, security features as another essential feature of BLE have been introduced. Possible threats and solution also have been presented.
 
 %============================================================
 
