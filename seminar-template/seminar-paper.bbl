@@ -30,12 +30,27 @@ Bluetooth.org.
   February 2015.
 \newblock \url{http://www.bluetooth.com/Pages/History-of-Bluetooth.aspx}.
 
+\bibitem{BLE_SE_PAIR}
+Bluetooth.org.
+\newblock {Security, Bluetooth Smart (Low Energy)}.
+\newblock Technical report, Bluetooth Special Interest Group, 2015.
+\newblock
+  \url{https://developer.bluetooth.org/TechnologyOverview/Pages/LE-Security.aspx}.
+
 \bibitem{BLE03}
 Bluetooth.org.
 \newblock {The Low Energy Technology Behind Bluetooth Smart}.
 \newblock Technical report, Bluetooth Special Interest Group, Available on
   February 2015.
 \newblock \url{http://www.bluetooth.com/Pages/low-energy-tech-info.aspx}.
+
+\bibitem{BLE_PAPER}
+J.~P. Carles~Gomez, Joaquim~Oller.
+\newblock {Overview and Evaluation of Bluetooth Low Energy: An Emerging
+  Low-Power Wireless Technology}.
+\newblock Technical report, Universitat Politècnica de Catalunya/Fundació
+  i2Cat, August 2012.
+\newblock \url{http://www.mdpi.com/1424-8220/12/9/11734/htm}.
 
 \bibitem{BLE_SM}
 V.~Gao.

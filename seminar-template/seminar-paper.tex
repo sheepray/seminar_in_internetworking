@@ -132,9 +132,38 @@ In the implementation of this system, Bluetooth plays the role of providing wire
 There are still numerous of applications integrated with Bluetooth device. This specific use case just simply demonstrate part of abilities that the Bluetooth is capable of. Enhanced with the newest update, Bluetooth bring great convenience to its manufactures, developers and consumers like it promised.
 %============================================================
 \section{Security Features}
-Security is always coming along with technologies. When a new technology has been proposed, one question would be that does the technology provides security feature or secure enough. If an update states that one technology announces its security feature has been enhanced, another question would be that is the update secure enough or will it bring new threats to the technology. There is no flawless technology presents nowadays. Because we created these technologies while we, as a human being, have flaws. This rule also apply to Bluetooth. So this section will present some critical security features of BLE, its security issues and possible solutions.
+When one Bluetooth device (Source) is communicating with another one (Target), other Bluetooth devices within their transmission range can also receive the signals transmitted between them. To create and maintain a secure Bluetooth connection is to make sure that either the message exchanged between them can not be intercepted, modified and interpreted by other anonymous devices or the message received comes from the Source that the Target trusts. With this kind of purposes, BLE has introduced several services to make it happen. For instance, Advanced Encryption Standards (AES) has been used to encrypt and decrypt the messages exchanged between BLE devices. And signature-based message signing method is used to provide and verify the identity of one message. Latter subsections describe more detailed implementation about security services in BLE.
 %--------------------------------------------------------------------------------------------------------
 \subsection{Encryption and Authentication services}
+For two "strange" BLE devices to communicate with each other, one (Initiator) initiates a paring procedure with another device (Responder) to exchange their identity for setting up trust and getting encryption keys ready for the future data exchange \cite{BLE_SE_PAIR}. During the paring procedure, they decide which paring method should be used and what to be shared between them. After the paring procedure, all the encryption keys should have been exchanged and thus using these encryption keys to create and maintain a secure connection. The most critical step among all these three steps is what happened during paring procedure and the secure services mainly reveal in this round. The paring procedure is consists of three phases.
+
+The first phase is two devices announcing their input and output capabilities and choosing a suitable method for phase two \cite{BLE_PAPER} (see picture \ref{Paring_method_one} and \ref{Paring_method_two}).
+
+\begin{figure}
+\centering
+\includegraphics[width=2.5in]{figures/Paring_method_one.png}
+\caption{Paring methods part one}
+\label{Paring_method_one}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=2.5in]{figures/Paring_method_two.png}
+\caption{Paring methods part two}
+\label{Paring_method_two}
+\end{figure}
+
+The second phase is to make sure that the key exchange in phase three is operated in a secure way by generating a Short-Term Key (STK) to encrypt the transmission channel. The two devices agree on a Temporary Key (TK) using the method chose in the first phase. One common method that the reader might be familiar with is using the Passkey Entry method, in which the user is asked to input six random digits as the TK. Another one is assisted by other technologies (such as NFC) for the TK agreement, which is called Out of Band method. If both methods are not available, the final one called Just Works method is adopted. This method has no authentication at all and thus is lack of the ability to prevent the MITM attack. After getting the TK, the STK can be obtained for each paring devices using this algorithm: STK = AES128 (TK, Srand || Mrand).
+
+After STK is been obtained, up to three 128-bit keys can be encrypted using STK and distributed to another device. These three keys contains  Long-Term Key (LTK), the Connection Signature Resolving Key (CSRK) and the Identity Resolving Key (IRK). LTK is used to create session key for each Link Layer connection (See BLE protocol structure in Fig. \ref{BLE_protocol_stack}). CSRK is to sign the data at the ATT Layer and IRK is to generate the private address using the known public address thus to avoid the tracking.
+
+So, basically this is the whole three phase that the BLE 4.0 and 4.1 build trust between each other. One possible threat about this mechanism is introduced in the following section as well as the solution adopted in BLE 4.2.
+\begin{figure}
+\centering
+\includegraphics[width=2.5in]{figures/BLE_protocol_stack.jpg}
+\caption{Bluetooth Blow Energy Protocol Stack}
+\label{BLE_protocol_stack}
+\end{figure}
 
 %--------------------------------------------------------------------------------------------------------
 \subsection{Possible Security Issues and Solutions}

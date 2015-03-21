@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.7)  21 MAR 2015 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.7)  21 MAR 2015 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -319,8 +319,29 @@ File: figures/use_case.png Graphic file (type png)
 <use figures/use_case.png>
 Package pdftex.def Info: figures/use_case.png used on input line 117.
 (pdftex.def)             Requested size: 252.94499pt x 109.36047pt.
- [6 <./figures/use_case.png>] (./seminar-paper.bbl
-[7]
+ [6 <./figures/use_case.png>] [7]
+<figures/Paring_method_one.png, id=132, 493.845pt x 443.6575pt>
+File: figures/Paring_method_one.png Graphic file (type png)
+
+<use figures/Paring_method_one.png>
+Package pdftex.def Info: figures/Paring_method_one.png used on input line 144.
+(pdftex.def)             Requested size: 180.67499pt x 162.30934pt.
+
+<figures/Paring_method_two.png, id=133, 493.845pt x 511.9125pt>
+File: figures/Paring_method_two.png Graphic file (type png)
+
+<use figures/Paring_method_two.png>
+Package pdftex.def Info: figures/Paring_method_two.png used on input line 151.
+(pdftex.def)             Requested size: 180.67499pt x 187.28003pt.
+ [8 <./figures/Paring_method_one.png> <./figures/Paring_method_two.png>]
+<figures/BLE_protocol_stack.jpg, id=145, 401.5pt x 393.47pt>
+File: figures/BLE_protocol_stack.jpg Graphic file (type jpg)
+
+<use figures/BLE_protocol_stack.jpg>
+Package pdftex.def Info: figures/BLE_protocol_stack.jpg used on input line 163.
+
+(pdftex.def)             Requested size: 180.67499pt x 177.06586pt.
+ (./seminar-paper.bbl
 Underfull \hbox (badness 1874) in paragraph at lines 4--9
 []\T1/ptm/m/n/10 Z. Al-liance.  Mar-ket Lead-er-ship.  Tech-ni-cal re-port, Zig
 -Bee Al-liance, Avail-able
@@ -332,7 +353,7 @@ Underfull \hbox (badness 2229) in paragraph at lines 4--9
 org / About / AboutTechnology /
  []
 
-
+[9 <./figures/BLE_protocol_stack.jpg>]
 Underfull \hbox (badness 5331) in paragraph at lines 11--17
 \T1/ptm/m/n/10 2013.  []$\T1/pcr/m/n/10 http : / / www . bluetooth . com / Page
 s / Press-[]Releases-[]Detail .
@@ -345,64 +366,63 @@ s / Press-[]Releases-[]Detail .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 1412) in paragraph at lines 34--39
+\T1/ptm/m/n/10 tooth Spe-cial In-ter-est Group, 2015.  []$\T1/pcr/m/n/10 https 
+: / / developer . bluetooth . org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 []\T1/ptm/m/n/10 V. Gao.  Ev-ery-thing that you al-ways want to know about Blue
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 \T1/ptm/m/n/10 tooth se-cu-rity in Blue-tooth 4.1.  Tech-ni-cal re-port, Blue-t
 ooth Spe-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 10000) in paragraph at lines 56--62
 \T1/ptm/m/n/10 cial In-ter-est Group, 2014.  []$\T1/pcr/m/n/10 http : / / blog 
 . bluetooth . com /
  []
 
 
-Overfull \hbox (119.32607pt too wide) in paragraph at lines 41--47
+Overfull \hbox (119.32607pt too wide) in paragraph at lines 56--62
 \T1/pcr/m/n/10 everything-[]you-[]always-[]wanted-[]to-[]know-[]about-[]bluetoo
 th-[]security-[]in-[]bluetooth-[]4-[]2/$[]\T1/ptm/m/n/10 . 
  []
 
-[8])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+[10])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./seminar-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
-
-
-Package rerunfilecheck Warning: File `seminar-paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `seminar-paper.out':
-(rerunfilecheck)             Before: D81FF7EC760196C05C9BF91B52682123;956
-(rerunfilecheck)             After:  F9B107CE5EE4A76536A62873F0EA6D36;976.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
+Package rerunfilecheck Info: File `seminar-paper.out' has not changed.
+(rerunfilecheck)             Checksum: F9B107CE5EE4A76536A62873F0EA6D36;976.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 5801 strings out of 493117
- 84677 string characters out of 6135433
- 169553 words of memory out of 5000000
- 9159 multiletter control sequences out of 15000+600000
+ 5829 strings out of 493117
+ 85304 string characters out of 6135433
+ 170767 words of memory out of 5000000
+ 9176 multiletter control sequences out of 15000+600000
  34973 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,45p,1707b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,45p,1707b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on seminar-paper.pdf (9 pages, 132901 bytes).
+Output written on seminar-paper.pdf (11 pages, 234536 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
